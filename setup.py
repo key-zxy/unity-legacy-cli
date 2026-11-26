@@ -2,7 +2,7 @@ from setuptools import find_namespace_packages, setup
 
 setup(
     name="unity-legacy-cli",
-    version="0.3.1",
+    version="0.3.2",
     description="Local command-line control for legacy Unity Editors",
     url="https://github.com/key-zxy/unity-legacy-cli",
     license="Apache-2.0",

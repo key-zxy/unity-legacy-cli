@@ -6,7 +6,7 @@ Control a running Unity Editor via a local, Editor-only Unity package. The bridg
 
 | Unity version | Validation and feature notes |
 | --- | --- |
-| 2020.3.45f1, Windows | Clean-project Editor compilation and CLI end-to-end coverage. |
+| 2020.3.45f1, Windows | Clean-project Editor compilation and CLI end-to-end coverage, including finite-value validation, bounded UI Toolkit inspection and atomic UXML/USS writes. |
 | 2022.3.21f1, Windows | Experimental. Clean-project Editor compilation, status, batch reads and scene creation passed. The full editing and capture workflow timed out. |
 | 2019.4 LTS and 2020.1–2020.2 | Experimental compatibility target. These Editor versions have not been tested end to end. Prefab Mode uses the version-appropriate API. Profiler counter enumeration requires 2020.2 or later. Material writes require Unity's single-asset save API. |
 | Earlier than 2019.4 | Outside the package's declared minimum. |
@@ -18,7 +18,7 @@ Other Editor patches, Unity 6, macOS and Linux are unverified. Feature availabil
 Requires Python 3.10+ and an open Unity project. Install the wheel from GitHub Releases, then locate the bridge.
 
 ```console
-python -m pip install https://github.com/key-zxy/unity-legacy-cli/releases/download/v0.3.1/unity_legacy_cli-0.3.1-py3-none-any.whl
+python -m pip install https://github.com/key-zxy/unity-legacy-cli/releases/download/v0.3.2/unity_legacy_cli-0.3.2-py3-none-any.whl
 unity-legacy-cli bridge-path
 ```
 
